@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 80px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #007bff;
+}
+
+/* Skills Section */
+.skill-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.skill-card h4 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-card ul li {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+/* Project Cards */
+.project-card {
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-stack {
+    margin-top: 15px;
+}
+
+.tech-stack .badge {
+    margin-right: 5px;
+}
+
+/* Contact Form */
+#contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 100px 0;
+    }
+}
