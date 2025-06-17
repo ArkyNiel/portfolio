@@ -1,89 +1,229 @@
-/* General Styles */
+
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: #000000;
+    background-color: #ffffff;
+}
+body {
+    background-color: #ffffff;
+    color: #000000;
 }
 
-/* Hero Section */
+.navbar {
+    background-color: #000000 !important;
+}
+
 .hero-section {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding-top: 80px;
+    background-color: #f8f9fa;
+    padding: 150px 0;
 }
 
-.social-links {
-    margin-top: 20px;
+.skill-card, .project-card {
+    border: 1px solid #000000;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.btn-primary:hover {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.badge {
+    background-color: #000000 !important;
 }
 
 .social-link {
-    color: white;
-    font-size: 24px;
+    color: #000000;
+    font-size: 1.5rem;
     margin: 0 10px;
-    transition: color 0.3s;
 }
 
 .social-link:hover {
-    color: #007bff;
+    color: #333333;
 }
 
-/* Skills Section */
-.skill-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    height: 100%;
+.form-control:focus {
+    border-color: #000000;
+    box-shadow: 0 0 0 0.2rem rgba(0,0,0,0.25);
 }
 
-.skill-card h4 {
-    color: #333;
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
     margin-bottom: 15px;
 }
 
-.skill-card ul {
-    list-style: none;
-    padding-left: 0;
+.hero-section p.lead {
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.9;
 }
 
-.skill-card ul li {
-    margin-bottom: 8px;
-    color: #666;
+.social-links {
+    margin-top: 40px;
 }
 
-/* Project Cards */
-.project-card {
-    transition: transform 0.3s;
-    height: 100%;
+.social-link {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 32px;
+    margin: 0 15px;
+    transition: color 0.4s ease, transform 0.3s ease;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+.social-link:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
 }
 
-.tech-stack {
-    margin-top: 15px;
+/* Skills Section */
+.skill-card, .project-card {
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    transition: transform 0.2s cubic-bezier(.4,2,.6,1), box-shadow 0.2s;
+    margin-bottom: 2rem;
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.skill-card h4, .project-card .card-title {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.skill-card ul, .project-card .card-text {
+    color: #444;
+    font-size: 1.05em;
 }
 
 .tech-stack .badge {
-    margin-right: 5px;
+    background: #000;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 0.5em 1.2em;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 /* Contact Form */
 #contact-form {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 2.5rem 2rem;
+}
+
+#contact-form .form-control {
+    border-radius: 0.75rem;
+    border: 1.5px solid #000;
+    background: #fafafa;
+    color: #000;
+    font-size: 1.05em;
+    box-shadow: none;
+    transition: border-color 0.2s;
+}
+
+#contact-form .form-control:focus {
+    border-color: #333;
+    box-shadow: 0 0 0 0.1rem rgba(0,0,0,0.08);
+    background: #fff;
+    color: #000;
+}
+
+#contact-form label {
+    color: #888;
+    font-size: 1em;
+}
+
+#contact-form .btn-primary {
+    background: #000;
+    border: none;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    transition: background 0.2s;
+}
+
+#contact-form .btn-primary:hover {
+    background: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 0.9em;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero-section {
         height: auto;
-        padding: 100px 0;
+        padding: 80px 0;
     }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p.lead {
+        font-size: 1.2rem;
+    }
+
+    .social-link {
+        font-size: 28px;
+    }
+
+    .skill-card, .project-card, #contact-form {
+        margin-bottom: 25px;
+    }
+}
+
+/* Navigation */
+.navbar {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for showing/hiding */
+}
+
+.navbar.hidden {
+    transform: translateY(-100%); /* Hides the navbar by moving it up */
 }
